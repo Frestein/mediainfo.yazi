@@ -27,7 +27,7 @@ function M.path_quote(path)
 end
 
 M.force_render = ya.sync(function(_, _)
-	(ui.render or ya.render)()
+	ui.render()
 end)
 
 M.set_state = ya.sync(function(state, key, value)
